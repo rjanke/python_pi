@@ -123,4 +123,6 @@ while True:
 
 @app.route('/')
 def index():
-    return 'Temp F: {}'.format(temp_f)
+    get_temps = calc_temps()
+    temp_fx = str(round(get_temps[1], 1))
+    return 'Temp F: {}'.format(temp_fx)
