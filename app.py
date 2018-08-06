@@ -92,31 +92,31 @@ def save_to_file():
 	data_file.write('Celcius: ' + temp_c + ' Fahrenheit: ' + temp_f)
 	data_file.close()
 
-while True:
-  #	save_to_file()
-	get_temps = calc_temps()
-	temp_c = str(round(get_temps[0], 1))
-	temp_f = str(round(get_temps[1], 1))
+# while True:
+#	save_to_file()
+get_temps = calc_temps()
+temp_c = str(round(get_temps[0], 1))
+temp_f = str(round(get_temps[1], 1))
 
-	# Set LCD cursor to home position.
-	lcd.set_cursor(0, 0)
-	# Print to LCD.
-	lcd.message('Temp:')
+# Set LCD cursor to home position.
+lcd.set_cursor(0, 0)
+# Print to LCD.
+lcd.message('Temp:')
 
-	# Set LCD cursor to next line.
-	lcd.set_cursor(0, 1)
-	# Print actual temperature.
-	lcd.message('{}'.format(temp_f))
+# Set LCD cursor to next line.
+lcd.set_cursor(0, 1)
+# Print actual temperature.
+lcd.message('{}'.format(temp_f))
 
-	# Special ASCII char. Degree symbol.
-	lcd.write8(223, True)
-	# Print F for fahrenheit.
-	lcd.message('F')
+# Special ASCII char. Degree symbol.
+lcd.write8(223, True)
+# Print F for fahrenheit.
+lcd.message('F')
 
-	# Print a two line message
-	# lcd.message('Temp:\n{}F'.format(temp_f))
-	# print('Celcius: ' + temp_c + '\nFahrenheit: ' + temp_f)
-	time.sleep(1)
+# Print a two line message
+# lcd.message('Temp:\n{}F'.format(temp_f))
+# print('Celcius: ' + temp_c + '\nFahrenheit: ' + temp_f)
+# time.sleep(1)
 
 app = Flask(__name__)
 
