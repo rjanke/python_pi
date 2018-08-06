@@ -1,7 +1,5 @@
 from flask import Flask
 
-app = Flask(__name__)
-
 import os
 import glob
 import time
@@ -120,6 +118,7 @@ while True:
 	# print('Celcius: ' + temp_c + '\nFahrenheit: ' + temp_f)
 	time.sleep(1)
 
+app = Flask(__name__)
 
 @app.route('/')
 def index():
