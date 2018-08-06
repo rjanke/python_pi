@@ -117,7 +117,7 @@ while True:
 
 	# Print a two line message
 	# lcd.message('Temp:\n{}F'.format(temp_f))
-	print('Celcius: ' + temp_c + '\nFahrenheit: ' + temp_f)
+	# print('Celcius: ' + temp_c + '\nFahrenheit: ' + temp_f)
 	time.sleep(1)
 
 
