@@ -21,3 +21,7 @@ Run the program.
 ```
 (venv) $ sudo python3 temp.py
 ```
+
+## Run GPIO as non root
+
+https://raspberrypi.stackexchange.com/questions/40105/access-gpio-pins-without-root-no-access-to-dev-mem-try-running-as-root
