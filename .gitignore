@@ -1,0 +1,12 @@
+# Don't track virtual enviroments.
+*venv
+
+# Don't track Excel docs.
+*.xlsx
+
+# Don't track .vscode settings.
+*.vscode
+
+# Don't track py error files.
+*__pycache__
+*.pyc
